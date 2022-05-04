@@ -46,13 +46,13 @@ Spring是分层的Java SE/EE应用full-stack轻量级开源框架，以loc(Inver
 
 ### 3. Spring的体系结构
 
-![spring-overview](https://gitee.com/zhangsubao/studynotes/raw/master/notes/images/spring-overview.png)
+![spring-overview](images/spring-overview.png)
 
 ## 二、Spring快速入门
 
 ### 1. Spring程序开发步骤
 
-![Spring程序开发步骤](https://gitee.com/zhangsubao/studynotes/raw/master/notes/images/Spring程序开发步骤.png)
+![Spring程序开发步骤](images/Spring程序开发步骤.png)
 
 ① 导入Spring开发的基本坐标
 
@@ -290,7 +290,7 @@ userService.save();
 
 目前UserService实例和UserDao实例都存在于Spring容器中，当前的做法是在容器外部获得UserService实例和UserDao实例，然后在程序中进行结合。
 
-![](https://gitee.com/zhangsubao/studynotes/raw/master/notes/images/2022-02-12-23-44-49-image.png)
+![](images/2022-02-12-23-44-49-image.png)
 
 因为UserService和UserDao都在Spring容器中，而最终程序直接使用的是UserService，所以可以在 Spring容器中，将UserDao设置到UserService内部。
 
@@ -558,9 +558,9 @@ public class UserDaoImpl implements UserDao {
 
 applicationContext：接口类型，代表应用上下文，可以通过其实例获得Spring容器中的Bean对象
 
-![](https://gitee.com/zhangsubao/studynotes/raw/master/notes/images/20151204130539849.png)
+![](images/20151204130539849.png)
 
-![](https://gitee.com/zhangsubao/studynotes/raw/master/notes/images/20151204171304513.png)
+![](images/20151204171304513.png)
 
 ### 2. ApplicationContext的实现类
 
@@ -1235,7 +1235,7 @@ Object obj = applicationContext.getBean("id");
 
 SpringMVC是一种基于Java的实现MVC设计模型的请求驱动类型的轻量级web框架，属于SpringFrameWork的后续产品，已经融合在Spring Web Flow中。
 
-![](https://gitee.com/zhangsubao/studynotes/raw/master/notes/images/2022-02-12-23-51-42-image.png)
+![](images/2022-02-12-23-51-42-image.png)
 
 ### 2. SpringMVC快速入门
 
@@ -1373,11 +1373,11 @@ SpringMVC是一种基于Java的实现MVC设计模型的请求驱动类型的轻�
 
 6. 客户端发起请求
 
-![](https://gitee.com/zhangsubao/studynotes/raw/master/notes/images/2022-02-12-23-52-50-image.png)
+![](images/2022-02-12-23-52-50-image.png)
 
 ### 3. SpringMVC流程图示
 
-![](https://gitee.com/zhangsubao/studynotes/raw/master/notes/images/Snipaste_2022-04-05_23-22-39.png)
+![](images/Snipaste_2022-04-05_23-22-39.png)
 
 ## 九、SpringMVC组件解析
 
@@ -1403,7 +1403,7 @@ SpringMVC是一种基于Java的实现MVC设计模型的请求驱动类型的轻�
 
 ⑩ DispatcherServlet根据View进行渲染试图(即将模型数据填充至试图中)，DispatcherServlet响应用户。
 
-![](https://gitee.com/zhangsubao/studynotes/raw/master/notes/images/Snipaste_2022-04-05_23-23-55.png)
+![](images/Snipaste_2022-04-05_23-23-55.png)
 
 1. 前端控制器：DispatcherServlet
 
@@ -1602,7 +1602,7 @@ private String suffix = "";//视图名称后缀
 
 直接返回字符串：此种方式会将返回的字符串与视图解析器的前后缀拼接后跳转。
 
-![](https://gitee.com/zhangsubao/studynotes/raw/master/notes/images/Snipaste_2022-02-26_16-27-23.png)
+![](images/Snipaste_2022-02-26_16-27-23.png)
 
 返回带有前缀的字符串：
 
@@ -1992,7 +1992,7 @@ public void quick21(@CookieValue(value = "JSESSIONID", required = false) String 
 
 - 当form表单的enctype取值为multipart/form-data时，请求正文内容就变成多部份形式：
 
-![](https://gitee.com/zhangsubao/studynotes/raw/master/notes/images/Snipaste_2022-02-26_18-22-40.png)
+![](images/Snipaste_2022-02-26_18-22-40.png)
 
 #### (13) 单文件上传步骤
 
@@ -2289,7 +2289,7 @@ jdbcTemplate.queryForObject(sql, Mapper, params)
 
 需求：用户在没有登录的情况下，不能对后台菜单进行访问，点击菜单跳转到登录页面，只有用户登录成功后才能进行后台功能的操作。
 
-![用户登录权限控制流程图](https://gitee.com/zhangsubao/studynotes/raw/master/notes/images/Snipaste_2022-02-26_14-59-00.png)
+![用户登录权限控制流程图](images/Snipaste_2022-02-26_14-59-00.png)
 
 ## 十三、Spring MVC异常处理
 
@@ -2299,7 +2299,7 @@ jdbcTemplate.queryForObject(sql, Mapper, params)
 
 系统的Dao、Service、Controller出现都通过throws Exception向上抛出，最后由SpringMVC前端控制器交由异常处理器进行异常处理，如下图：
 
-![异常处理流程](https://gitee.com/zhangsubao/studynotes/raw/master/notes/images/异常处理流程.png)
+![异常处理流程](images/异常处理流程.png)
 
 ### 2. 异常处理两种方式
 
@@ -2368,7 +2368,7 @@ AOP是OOP（面向对象编程）的延续，是软件开发中的一个热点�
 
 - 优势：减少重复代码，提高开发效率，并且便于维护
 
-![AOP装配原理](https://gitee.com/zhangsubao/studynotes/raw/master/notes/images/image-202200405224409481.png)
+![AOP装配原理](images/image-202200405224409481.png)
 
 #### (3) AOP的底层实现
 
@@ -2382,7 +2382,7 @@ AOP是OOP（面向对象编程）的延续，是软件开发中的一个热点�
 
 - cglib代理：基于父类的动态代理技术
 
-![常用的动态代理技术](https://gitee.com/zhangsubao/studynotes/raw/master/notes/images/常用的动态代理技术.png)
+![常用的动态代理技术](images/常用的动态代理技术.png)
 
 #### (5) AOP的相关概念
 
@@ -2709,7 +2709,7 @@ public class MyAspect {
 | 异常抛出通知 | @AfterThrowing  | 用于配置异常抛出通知，指定增强的方法在出现异常时执行   |
 | 最终通知   | @After          | 用于配置最终通知，无论增强方法执行是否有异常都会执行   |
 
-![](https://gitee.com/zhangsubao/studynotes/raw/master/notes/images/2022-03-02-20-03-09-image.png)
+![](images/2022-03-02-20-03-09-image.png)
 
 ## 十五、Spring事务管理
 
@@ -2774,7 +2774,7 @@ TransactionDefinition是事务的定义信息对象，里面有如下方法：
 - 超时时间：默认值是-1，没有超时限制。如果有，以秒为单位进行设置
 - 是否只读：建议查询时设置为只读
 
-![事务传播级别](https://gitee.com/zhangsubao/studynotes/raw/master/notes/images/事务传播级别.png)
+![事务传播级别](images/事务传播级别.png)
 
 #### 3) TransactionStatus
 
