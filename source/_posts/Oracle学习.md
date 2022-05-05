@@ -1,9 +1,13 @@
 ---
-title: Oracle
-excerpt: 《收获，不止Oracle》
+title: Oracle学习
+excerpt: 参考：《收获，不止Oracle》
 date: 2022-03-26 00:25:00
 update: 2022-03-26 00:25:00
+categories: 
+  - 数据库
 tags:
+  - 数据库
+  - 技术
 ---
 
 # Oracle从入门到放弃

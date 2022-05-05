@@ -2,7 +2,10 @@
 title: Linux环境下weblogic的安装与配置
 excerpt: Linux环境下weblogic的安装与配置，基于weblogic12 + jdk1.8。
 date: 2021-08-11 14:06:48
-tags:
+categories: weblogic
+tags: 
+  - 中间件
+  - 技术
 ---
 # 前言
 

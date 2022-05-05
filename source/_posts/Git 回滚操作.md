@@ -3,7 +3,11 @@ title: Git回滚操作
 excerpt: Git回滚操作
 date: 2022-03-26 00:05:39
 update: 2022-03-26 00:05:39
-tags:
+categories: 
+  - Git
+tags: 
+  - Git
+  - 技术
 ---
 
 # Git 回滚操作

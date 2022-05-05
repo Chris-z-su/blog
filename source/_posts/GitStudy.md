@@ -3,7 +3,11 @@ title: GitStudy
 excerpt: GitStudy
 date: 2022-04-03 16:26:39
 update: 2022-04-03 16:27:39
+categories: 
+  - Git
 tags:
+  - Git
+  - 技术
 ---
 
 # Git基本操作

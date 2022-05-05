@@ -3,7 +3,11 @@ title: Minecraft Carpet Mod 命令使用教程
 excerpt: Minecraft Carpet Mod 命令使用教程
 date: 2022-04-23 15:06:39
 update: 2022-04-23 15:06:39
+categories: Carpet
 tags:
+  - Minecraft
+  - mod
+  - 游戏
 ---
 
 # Minecraft Carpet Mod 命令使用教程

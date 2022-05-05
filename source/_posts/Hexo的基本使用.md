@@ -2,7 +2,12 @@
 title: Hexo的基本使用
 excerpt: Hexo命令的基本使用，常用配置以及代码提交等。
 date: 2022-05-02 07:40:25
+categories: 
+  - Hexo
 tags:
+  - 前端
+  - 技术
+  - 框架
 ---
 > https://hexo.io/zh-cn/docs/commands
 ## 1. 初始化项目
@@ -60,6 +65,9 @@ hexo deploy
 ## 5. Hexo fluid主题更新
 > https://hexo.fluid-dev.com/docs/start/#%E6%9B%B4%E6%96%B0%E4%B8%BB%E9%A2%98
 
+
+## 6. Hexo Fluid 用户手册
+https://hexo.fluid-dev.com/docs/
 
 
 ## 99. 其他

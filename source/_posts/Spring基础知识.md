@@ -3,7 +3,14 @@ title: Spring基础知识
 excerpt: Spring是分层的Java SE/EE应用full-stack轻量级开源框架，以loc(Inverse Of Control：反转控制)和AOP(Aspect Oriented Programming：面向切面编程)为核心。
 date: 2022-01-02 00:00:00
 update: 2022-01-02 00:00:00
+categories: 
+  - Java
+  - Spring
 tags:
+  - Java
+  - 编程语言
+  - 框架
+  - 技术
 ---
 
 # Spring基础知识

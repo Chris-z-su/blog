@@ -3,7 +3,13 @@ title: ActiveMQ入门
 excerpt: ActiveMQ是一个基于Java的消息队列服务器，它提供了一个简单的消息队列服务器，可以用来支持多个客户端进行消息的发送和接收。
 date: 2022-04-21 09:51:39
 update: 2022-04-21 23:09:00
-tags:
+categories: 
+  - Java
+  - 消息队列
+tags: 
+  - Java
+  - 编程语言
+  - 面试
 ---
 
 ## 1 ActiveMQ简介

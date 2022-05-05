@@ -3,7 +3,11 @@ title: 【Carpet Mod / 地毯模组】下载以及简单教程
 excerpt: 关于Carpet Mod 地毯模组下载以及简单教程
 date: 2022-04-22 23:12:39
 update: 2022-04-23 17:14:00
+categories: Carpet
 tags:
+  - Minecraft
+  - mod
+  - 游戏
 ---
 
 # 【Carpet Mod / 地毯模组】下载以及简单教程

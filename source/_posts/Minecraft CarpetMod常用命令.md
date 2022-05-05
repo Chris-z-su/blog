@@ -3,7 +3,11 @@ title: Minecraft CarpetMod常用命令
 excerpt: Minecraft CarpetMod常用命令
 date: 2022-04-30 17:49:00
 update: 2022-04-30 17:49:00
+categories: Carpet
 tags:
+  - Minecraft
+  - mod
+  - 游戏
 ---
 
 ## 1. 显示tps

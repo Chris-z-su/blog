@@ -2,7 +2,10 @@
 title: Linux环境下的weblogic域的创建与配置
 excerpt: Linux环境下的weblogic域的创建与配置，这只是weblogic创建域的一种方式，还可以使用py脚本或者其他脚本执行去创建。
 date: 2021-08-03 09:35:36
-tags:
+categories: weblogic
+tags: 
+  - 中间件
+  - 技术
 ---
 ## weblogic创建新域
 ****版本：****

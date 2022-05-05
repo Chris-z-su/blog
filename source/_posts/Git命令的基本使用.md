@@ -4,7 +4,11 @@ excerpt: Git操作项目、Git分支管理以及Git合并、提交、回滚等
 sticky: 100
 date: 2020-07-11 23:12:39
 update: 2022-05-03 17:14:00
+categories: 
+  - Git
 tags:
+  - Git
+  - 技术
 ---
 
 # Git基本操作
