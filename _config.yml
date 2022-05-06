@@ -112,6 +112,6 @@ deploy:
   type: git
   # repo: https://github.com/Chris-z-su/chris-z-su.github.io.git
   repo: git@github.com:Chris-z-su/chris-z-su.github.io.git
-  branch: develop
-  # branch: main
+  branch: develop  # 预提交到开发分支
+  # branch: main  # 主分支
 

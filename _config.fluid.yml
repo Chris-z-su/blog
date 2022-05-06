@@ -209,6 +209,7 @@ custom_js:
 custom_css:
   - /css/iconfont_pdf/iconfont.css
   - /css/iconfont_yule/iconfont.css
+  - /css/iconfont_music/iconfont.css
 
 # 自定义 <head> 节点中的 HTML 内容
 # Customize <head> HTML content
@@ -330,6 +331,7 @@ navbar:
       key: '娱乐',
       icon: 'iconfont icon-wenhuayule',
       submenu: [
+        { key: '音乐', link: '/music/', icon: "iconfont icon-yinle" },
         { key: 'QQ音乐', link: 'https://y.qq.com/' },
         { key: '腾讯视频', link: 'https://v.qq.com/' }
       ]
@@ -900,6 +902,39 @@ pdf:
 
 
 #---------------------------
+# Whether to display the musics.
+# 单独的音乐页面.
+#---------------------------
+music:
+  enable: true
+  title:          #非吸底模式有效
+    enable: true
+    show: 听听音乐
+  server: tencent   #require music platform: netease, tencent, kugou, xiami, baidu
+  # > `server`可选`netease`（网易云音乐），`tencent`（QQ音乐），`kugou`（酷狗音乐），`xiami`（虾米音乐），
+  # > `baidu`（百度音乐）。
+  # > `type`可选`song`（歌曲），`playlist`（歌单），`album`（专辑），`search`（搜索关键字），`artist`（歌手）
+  # > `id`获取方法示例: 浏览器打开网易云音乐，点击我喜欢的音乐歌单，浏览器地址栏后面会有一串数字，`playlist`的`id`即为这串数字。
+  type: playlist    #require song, playlist, album, search, artist
+  id: 907303766     #require song id / playlist id / album id / search keyword
+  fixed: false      # 开启吸底模式
+  autoplay: true   # 是否自动播放
+  theme: '#42b983'
+  loop: 'all'       # 音频循环播放, 可选值: 'all', 'one', 'none'
+  order: 'random'   # 音频循环顺序, 可选值: 'list', 'random'
+  preload: 'auto'   # 预加载，可选值: 'none', 'metadata', 'auto'
+  volume: 0.6       # 默认音量，请注意播放器会记忆用户设置，用户手动设置音量后默认音量即失效
+  listFolded: false  # 列表默认折叠
+  listMaxHeight: "525px" #列表最大高度
+  autoHide: false    # hide automaticaly
+  hideLrc: false     # 隐藏歌词
+  banner_img: /img/1522678216135.jpg
+  banner_img_height: 60
+  banner_mask_alpha: 0.3
+  subtitle: 
+
+
+#---------------------------
 # 关于页
 # About Page
 #---------------------------
@@ -1077,3 +1112,20 @@ donate:
   message: '请博主喝杯咖啡 o(*^ω^*)o'
   alipay: /img/alipay_qrcode.png
   wechatpay: /img/weChat_qrcode.png
+
+
+
+
+# The used front-end library can be replaced with the corresponding CDN address as needed,
+# If the specific version is not specified below, you can use the latest version.
+# 使用到的前端库，可按需替换成对应的CDN地址，如果下面未指定具体的版本号，使用最新的版本即可.
+# 注：jsdelivr可以自动帮你生成.min版的js和css，所以你在设置js及css路径中可以直接写.min.xxx
+libs:
+  css:
+    aplayer: /libs/aplayer/APlayer.min.css
+  js:
+    aplayer: /libs/aplayer/APlayer.min.js
+    colorThief: /libs/aplayer/color-thief.js
+
+
+
