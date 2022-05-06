@@ -207,6 +207,8 @@ custom_js:
 # 指定自定义 .css 文件路径，用法和 custom_js 相同
 # The usage is the same as custom_js
 custom_css:
+  - /css/iconfont_pdf/iconfont.css
+  - /css/iconfont_yule/iconfont.css
 
 # 自定义 <head> 节点中的 HTML 内容
 # Customize <head> HTML content
@@ -323,9 +325,10 @@ navbar:
     - { key: "archive", link: "/archives/", icon: "iconfont icon-archive-fill" }
     - { key: "category", link: "/categories/", icon: "iconfont icon-category-fill" }
     - { key: "tag", link: "/tags/", icon: "iconfont icon-tags-fill" }
+    - { key: "PDF", link: "/pdf/", icon: "iconfont icon-pdf" }
     - { 
       key: '娱乐',
-      icon: 'iconfont icon-books',
+      icon: 'iconfont icon-wenhuayule',
       submenu: [
         { key: 'QQ音乐', link: 'https://y.qq.com/' },
         { key: '腾讯视频', link: 'https://v.qq.com/' }
@@ -333,7 +336,7 @@ navbar:
     }
     - { 
       key: '小游戏',
-      icon: 'iconfont icon-books',
+      icon: 'iconfont icon-yule',
       submenu: [
         { key: 'H5时钟', link: '/games/clock/index.html' },
         { key: '塔防', link: '/games/tower-defense/src/td.html' },
@@ -881,6 +884,19 @@ tag:
     unit: px
     start_color: "#BBBBEE"
     end_color: "#337ab7"
+
+
+#---------------------------
+# PDF页
+# PDF Page
+#---------------------------
+pdf:
+  title: "PDF"
+  enable: true
+  banner_img: /img/pdfimg.jpg
+  banner_img_height: 60
+  banner_mask_alpha: 0.3
+  subtitle: "一些关于Java基础及框架的面试题PDF文档"
 
 
 #---------------------------

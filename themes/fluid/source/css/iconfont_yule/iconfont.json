@@ -1,0 +1,23 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "173463",
+      "name": "文化娱乐",
+      "font_class": "wenhuayule",
+      "unicode": "e62c",
+      "unicode_decimal": 58924
+    },
+    {
+      "icon_id": "11195056",
+      "name": "娱乐",
+      "font_class": "yule",
+      "unicode": "e662",
+      "unicode_decimal": 58978
+    }
+  ]
+}
