@@ -110,3 +110,40 @@ ffmpeg -i source.mkv -c copy dst.mp4
 ffmpeg -i "2022-05-02 17-06-22.mkv" -c copy test.mp4
 ```
 
+## 14. 太阳系日地轨道参数
+```
+{
+	"bodies": [
+		{
+			"type": "sun",
+			"raduis": 30,
+			"mass": 100,
+			"pos": {
+				"x": 0,
+				"y": 0,
+				"z": 0
+			},
+			"initVelocity": {
+				"x": 0,
+				"y": 0,
+				"z": 0
+			}
+		},
+		{
+			"type": "earth",
+			"raduis": 6,
+			"mass": 1,
+			"pos": {
+				"x": 0,
+				"y": -100,
+				"z": -300
+			},
+			"initVelocity": {
+				"x": 20,
+				"y": 100,
+				"z": -50
+			}
+		}
+	]
+}
+```

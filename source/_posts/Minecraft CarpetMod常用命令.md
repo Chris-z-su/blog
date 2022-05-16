@@ -10,6 +10,8 @@ tags:
   - 游戏
 ---
 
+> wiki：https://github.com/gnembon/fabric-carpet/wiki/Current-Available-Settings
+
 ## 1. 显示tps
 
 ```shell
@@ -42,6 +44,11 @@ tags:
 ```shell
 守卫者农场挂机：
 /player Steve spawn at 1232 184 1023
+女巫塔：
+/player Steve spawn at -294 187 -361
+/player Steve spawn at -292 187 -361
+刷铁塔：
+/player Alex spawn at 374.70 63.00 -416.20
 ```
 
 
@@ -136,7 +143,22 @@ carper commandCameramode true
 
 > 作者：worldy丶jj https://www.bilibili.com/read/cv5948362/ 出处：bilibili
 
+F3 + P：开启或关闭Minecraft失去窗口焦点时的自动暂停功能。
+
+**命令格式：/gamemode <模式> [<目标>]**
+
+**<模式>：survival（生存模式）、creative（创造模式）、adventure（冒险模式）、spectator（旁观模式）**
+
+1、“gamemode0”生存模式。
+
+2、“gamemode1”创造模式。
+
+3、“gamemode2”冒险模式。
+
+4、“gamemode 3”旁观模式。
+
 ## 4. 单个玩家睡觉跳过夜晚
+
 字面意思
 
  ```shell
@@ -345,4 +367,13 @@ renewableCoral true
 [09:51:31] [Server thread/INFO]: - viewDistance [0] [12] [16] [32]
 [09:51:31] [Server thread/INFO]: - xpNoCooldown [true] [false]
 ```
+
+## 9.forge.mod
+https://www.curseforge.com/
+https://www.curseforge.com/minecraft/mc-mods/malilib
+
+安装教程：https://www.bilibili.com/video/BV1cX4y1T7RZ
+
+Minecraft我的世界1.18.2Fabric客户端整合包：
+https://www.bilibili.com/read/cv15963596/
 
