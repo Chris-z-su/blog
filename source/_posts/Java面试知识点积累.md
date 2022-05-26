@@ -17,7 +17,31 @@ tags:
 | ---------------------------- | ---------------------------------------------------------- | ------------------------------------------------------------ |
 | Java面试题及答案2019版（下） | https://blog.csdn.net/qq_41701956/article/details/86699263 |                                                              |
 
+# 一、前端基础
+
+
+
+# 二、Java基础
+
+
+
+
+
+
+
+# 二、
+
+
+
+
+
+
+
  
+
+
+
+
 
 # 1. 重写与重载之间的区别
 
@@ -695,7 +719,7 @@ d)    Writer
     </tr>
 </table>
 
- 
+
 
 ## 18) 访问修饰符
 
@@ -1437,6 +1461,28 @@ solr：solr是对lucene的封装
 参照博客：http://www.importnew.com/12707.html 
 
 
+
+# 23.Mybatis中#{}和${}的区别是什么
+
+① #{}是预编译处理、是占位符，${}是字符串替换、是拼接符
+
+② Mybatis在处理#{}时，会将sql中#{}替换为?，调用PreparedStatement来赋值
+
+③ Mybatis在处理${}时，就是把${}替换为变量的值，调用Statement来赋值
+
+④ 使用#{}可以有效的防止sql注入，提高系统安全性
+
+```sql
+-- 假设
+-- name="zhangsan"
+-- passsword="1 or 1=1"
+
+select * from user where name = #{name} and password = #{password} 将转为
+select * from user where name = 'zhouyu' and password = '1 or 1=1'
+
+select * from user where name = ${name} and password = ${password} 将转为
+select * from user where name = zhouyu and password = 1 or 1=1
+```
 
 
 
