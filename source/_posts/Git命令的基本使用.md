@@ -150,30 +150,50 @@ git clone xxx.git "指定目录"
 ```
 
 ## 五、Git合并分支
-```bash
-# 查看分支
+### 1.查看分支
+
 $ git branch
 * master
   newtest
-# 合并某分支到当前分支：git merge <name>
+
+### 2.合并某分支到当前分支：git merge <name>
+
 $ git merge newtest
-# 合并完之后就可以删除掉不需要的分支了
+
+### 3.合并完之后就可以删除掉不需要的分支了
+
 $ git branch -d newtest
 Deleted branch newtest (was c1501a2).
 
-# 关于merge回滚操作参考：
-#     https://blog.csdn.net/adsl624153/article/details/81155664
+### 4.关于merge回滚操作参考：
 
-# 执行完merge操作后，没有修改代码
-# 1、命令
-# ⑴ 查看merge操作的上一个提交记录的版本号
+ https://blog.csdn.net/adsl624153/article/details/81155664
+
+### 5.执行完merge操作后，没有修改代码
+
+#### ⑴ 查看merge操作的上一个提交记录的版本号
+
 git reflog
 
-# ⑵ 回滚到merge之前的状态
+#### ⑵ 回滚到merge之前的状态
+
 git reset --hard 版本号
-```
+
+> 参考：https://blog.csdn.net/songxi_bo/article/details/123384233
+>
+> 回退命令：
+> $ git reset --hard HEAD^ 回退到上个版本
+> $ git reset --hard HEAD~3 回退到前3次提交之前，以此类推，回退到n次提交之前
+> $ git reset --hard commit_id 退到/进到 指定commit的sha码
+>
+> 强推到远程：
+>
+> $ git push origin HEAD --force
+
+
 
 ## 六、Git 回滚操作
+
 > 参考：https://www.jianshu.com/p/c55958563f5a
 
 Git撤销&回滚操作(git reset 和 get revert)
@@ -224,18 +244,18 @@ git revert <commit_id> # 撤销指定的版本，撤销也会作为一次提交�
 来源：简书
 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
 
+## 九十九、错误解决：
 
-## 错误解决：
 ### 1、执行git命令时出现fatal: 'origin' does not appear to be a git repository错误
 在执行git pull origin master时出现：
 　　fatal: 'origin' does not appear to be a git repository
 　　fatal: Could not read from remote repository.
 　　Please make sure you have the correct access rights and the repository exists
- 
+
 解决方案：
 ```
 git remote add origin git@github:bx_reader/bx-reader-api.git
- 
+
 将关联远程仓库为origin
 ```
 

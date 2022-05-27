@@ -207,9 +207,6 @@ custom_js:
 # 指定自定义 .css 文件路径，用法和 custom_js 相同
 # The usage is the same as custom_js
 custom_css:
-  - /css/iconfont_pdf/iconfont.css
-  - /css/iconfont_yule/iconfont.css
-  - /css/iconfont_music/iconfont.css
 
 # 自定义 <head> 节点中的 HTML 内容
 # Customize <head> HTML content
@@ -326,20 +323,17 @@ navbar:
     - { key: "archive", link: "/archives/", icon: "iconfont icon-archive-fill" }
     - { key: "category", link: "/categories/", icon: "iconfont icon-category-fill" }
     - { key: "tag", link: "/tags/", icon: "iconfont icon-tags-fill" }
-    - { key: "PDF", link: "/pdf/", icon: "iconfont icon-pdf" }
     - { 
       key: '娱乐',
-      icon: 'iconfont icon-wenhuayule',
+      icon: 'iconfont icon-books',
       submenu: [
-        { key: '音乐', link: '/music/', icon: "iconfont icon-yinle" },
-        { key: '相册', link: '/galleries/', icon: "iconfont icon-yinle" },
         { key: 'QQ音乐', link: 'https://y.qq.com/' },
         { key: '腾讯视频', link: 'https://v.qq.com/' }
       ]
     }
     - { 
       key: '小游戏',
-      icon: 'iconfont icon-yule',
+      icon: 'iconfont icon-books',
       submenu: [
         { key: 'H5时钟', link: '/games/clock/index.html' },
         { key: '塔防', link: '/games/tower-defense/src/td.html' },
@@ -890,64 +884,6 @@ tag:
 
 
 #---------------------------
-# PDF页
-# PDF Page
-#---------------------------
-pdf:
-  title: "PDF"
-  enable: true
-  banner_img: /img/pdfimg.jpg
-  banner_img_height: 60
-  banner_mask_alpha: 0.3
-  subtitle: "一些关于Java基础及框架的面试题PDF文档"
-
-
-#---------------------------
-# Whether to display the musics.
-# 单独的音乐页面.
-#---------------------------
-music:
-  enable: true
-  title:          #非吸底模式有效
-    enable: true
-    show: 听听音乐
-  server: tencent   #require music platform: netease, tencent, kugou, xiami, baidu
-  # > `server`可选`netease`（网易云音乐），`tencent`（QQ音乐），`kugou`（酷狗音乐），`xiami`（虾米音乐），
-  # > `baidu`（百度音乐）。
-  # > `type`可选`song`（歌曲），`playlist`（歌单），`album`（专辑），`search`（搜索关键字），`artist`（歌手）
-  # > `id`获取方法示例: 浏览器打开网易云音乐，点击我喜欢的音乐歌单，浏览器地址栏后面会有一串数字，`playlist`的`id`即为这串数字。
-  type: playlist    #require song, playlist, album, search, artist
-  id: 907303766     #require song id / playlist id / album id / search keyword
-  fixed: false      # 开启吸底模式
-  autoplay: true   # 是否自动播放
-  theme: '#42b983'
-  loop: 'all'       # 音频循环播放, 可选值: 'all', 'one', 'none'
-  order: 'random'   # 音频循环顺序, 可选值: 'list', 'random'
-  preload: 'auto'   # 预加载，可选值: 'none', 'metadata', 'auto'
-  volume: 0.6       # 默认音量，请注意播放器会记忆用户设置，用户手动设置音量后默认音量即失效
-  listFolded: false  # 列表默认折叠
-  listMaxHeight: "525px" #列表最大高度
-  autoHide: false    # hide automaticaly
-  hideLrc: false     # 隐藏歌词
-  banner_img: /img/1522678216135.jpg
-  banner_img_height: 60
-  banner_mask_alpha: 0.3
-  subtitle: 
-
-
-#---------------------------
-# Whether to display the galleries.
-# 单独的相册页面.
-#---------------------------
-galleries:
-  enable: true
-  banner_gallery: /img/1522678216135.jpg
-  banner_gallery_height: 60
-  banner_mask_alpha: 0.3
-  subtitle: 
-
-
-#---------------------------
 # 关于页
 # About Page
 #---------------------------
@@ -1074,45 +1010,47 @@ static_prefix:
   internal_css: /css
   internal_img: /img
 
-  anchor: https://lib.baomitu.com/anchor-js/4.3.1/
+  anchor: https://cdn.jsdelivr.net/npm/anchor-js@4/
 
-  github_markdown: https://lib.baomitu.com/github-markdown-css/4.0.0/
+  github_markdown: https://cdn.jsdelivr.net/npm/github-markdown-css@4/
 
-  jquery: https://lib.baomitu.com/jquery/3.6.0/
+  jquery: https://cdn.jsdelivr.net/npm/jquery@3/dist/
 
-  bootstrap: https://lib.baomitu.com/twitter-bootstrap/4.6.1/
+  bootstrap: https://cdn.jsdelivr.net/npm/bootstrap@4/dist/
 
-  prismjs: https://lib.baomitu.com/prism/1.26.0/
+  highlightjs: https://cdn.jsdelivr.net/npm/highlight.js@10/
 
-  tocbot: https://lib.baomitu.com/tocbot/4.18.0/
+  prismjs: https://cdn.jsdelivr.net/npm/prismjs@1/
 
-  typed: https://lib.baomitu.com/typed.js/2.0.12/
+  tocbot: https://cdn.jsdelivr.net/npm/tocbot@4/dist/
 
-  fancybox: https://lib.baomitu.com/fancybox/3.5.7/
+  typed: https://cdn.jsdelivr.net/npm/typed.js@2/lib/
 
-  nprogress: https://lib.baomitu.com/nprogress/0.2.0/
+  fancybox: https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3/dist/
 
-  mathjax: https://lib.baomitu.com/mathjax/3.2.0/
+  nprogress: https://cdn.jsdelivr.net/npm/nprogress@0/
 
-  katex: https://lib.baomitu.com/KaTeX/0.15.2/
+  mathjax: https://cdn.jsdelivr.net/npm/mathjax@3/es5/
+
+  katex: https://cdn.jsdelivr.net/npm/katex@0/dist/
 
   busuanzi: https://busuanzi.ibruce.info/busuanzi/2.3/
 
-  clipboard: https://lib.baomitu.com/clipboard.js/2.0.10/
+  clipboard: https://cdn.jsdelivr.net/npm/clipboard@2/dist/
 
-  mermaid: https://lib.baomitu.com/mermaid/8.13.10/
+  mermaid: https://cdn.jsdelivr.net/npm/mermaid@8/dist/
 
-  valine: https://lib.baomitu.com/valine/1.4.16/
+  valine: https://cdn.jsdelivr.net/npm/valine@1/dist/
 
-  waline: https://lib.baomitu.com/waline/1.5.2/
+  waline: https://cdn.jsdelivr.net/npm/@waline/client@1/dist/
 
-  gitalk: https://lib.baomitu.com/gitalk/1.7.2/
+  gitalk: https://cdn.jsdelivr.net/npm/gitalk@1/dist/
 
-  disqusjs: https://lib.baomitu.com/disqusjs/1.3.0/
+  disqusjs: https://cdn.jsdelivr.net/npm/disqusjs@1/dist/
 
-  twikoo: https://lib.baomitu.com/twikoo/1.4.17/
+  twikoo: https://cdn.jsdelivr.net/npm/twikoo@1/dist/
 
-  hint: https://lib.baomitu.com/hint.css/2.7.0/
+  hint: https://cdn.jsdelivr.net/npm/hint.css@2/
 
 
 # Donate 自己为 Fluid 主题增加的打赏功能
@@ -1123,20 +1061,3 @@ donate:
   message: '请博主喝杯咖啡 o(*^ω^*)o'
   alipay: /img/alipay_qrcode.png
   wechatpay: /img/weChat_qrcode.png
-
-
-# The used front-end library can be replaced with the corresponding CDN address as needed,
-# If the specific version is not specified below, you can use the latest version.
-# 使用到的前端库，可按需替换成对应的CDN地址，如果下面未指定具体的版本号，使用最新的版本即可.
-# 注：jsdelivr可以自动帮你生成.min版的js和css，所以你在设置js及css路径中可以直接写.min.xxx
-libs:
-  css:
-    aplayer: /libs/aplayer/APlayer.min.css
-    fancybox: https://cdn.staticfile.org/fancybox/3.5.7/jquery.fancybox.min.css
-    justifiedGallery: https://cdn.staticfile.org/justifiedGallery/3.7.0/css/justifiedGallery.min.css
-  js:
-    aplayer: /libs/aplayer/APlayer.min.js
-    colorThief: /libs/aplayer/color-thief.js
-    fancybox: https://cdn.staticfile.org/fancybox/3.5.7/jquery.fancybox.min.js
-    justifiedGallery: https://cdn.staticfile.org/justifiedGallery/3.7.0/js/jquery.justifiedGallery.min.js
-
