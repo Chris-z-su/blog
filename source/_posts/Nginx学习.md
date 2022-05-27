@@ -1,3 +1,14 @@
+---
+title: Nginx学习
+excerpt: Nginx学习
+date: 2022-5-27 20:08:23
+update: 2022-5-27 20:08:23
+categories: 
+  - Nginx
+tags:
+  - 技术
+---
+
 # Nginx学习
 
 ## 一、Nginx反向代理
