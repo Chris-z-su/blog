@@ -1007,12 +1007,6 @@ links:
   # Member item of page
   items:
     - {
-      title: "谷中望月",
-      intro: "谷月姐的个人博客",
-      link: "https://blog.kukmoon.com/",
-      avatar: "https://blog.kukmoon.com/img/kukmoon-avatar-by-D-shi-hui-she.jpg"
-    }
-    - {
       title: "百宝箱丨LuckySec",
       intro: "LuckySecの博客",
       link: "http://luckyzmj.cn/tools/",
