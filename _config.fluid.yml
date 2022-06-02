@@ -917,7 +917,8 @@ music:
   # > `type`可选`song`（歌曲），`playlist`（歌单），`album`（专辑），`search`（搜索关键字），`artist`（歌手）
   # > `id`获取方法示例: 浏览器打开网易云音乐，点击我喜欢的音乐歌单，浏览器地址栏后面会有一串数字，`playlist`的`id`即为这串数字。
   type: playlist    #require song, playlist, album, search, artist
-  id: 907303766     #require song id / playlist id / album id / search keyword
+  # id: 907303766     #require song id / playlist id / album id / search keyword  喜欢的音乐
+  id: 8498237072
   fixed: false      # 开启吸底模式
   autoplay: true   # 是否自动播放
   theme: '#42b983'

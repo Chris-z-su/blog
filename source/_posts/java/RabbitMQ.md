@@ -12,7 +12,9 @@ tags:
   - 面试 
 ---
 
-> 参考：https://www.toutiao.com/article/6811460945009705479
+> 官方文档：https://www.rabbitmq.com/documentation.html
+>
+> 入门教程：https://www.toutiao.com/article/6811460945009705479
 >
 > https://juejin.cn/post/6844904113788944397
 
