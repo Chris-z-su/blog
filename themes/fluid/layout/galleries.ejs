@@ -1,5 +1,12 @@
-<link rel="stylesheet" href="/css/gallery.css">
+<%
+<!-- page.layout = 'galleries' -->
+page.banner_img = theme.galleries.banner_img
+page.banner_img_height = theme.galleries.banner_img_height
+page.banner_mask_alpha = theme.galleries.banner_mask_alpha
+%>
 
+<!-- <link rel="stylesheet"  href="<%- theme.libs.css.materialize %>"> -->
+<link rel="stylesheet" href="/css/gallery.css">
 
 <main class="content">
     <div class="container">
@@ -22,3 +29,5 @@
         <% } %>
     </div>
 </main>
+
+<!-- <script src="<%- theme.libs.js.materialize %>"></script> -->

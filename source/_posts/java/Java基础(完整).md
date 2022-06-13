@@ -1,5 +1,5 @@
 ---
-title: Java基础
+title: Java基础(完整)
 date: 2022-05-05 20:57:23
 update: 2022-05-05 20:57:23
 categories: Java
@@ -8,7 +8,6 @@ tags:
   - 基础
   - 技术
 ---
-
 
 # java基础
 
