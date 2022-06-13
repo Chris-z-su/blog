@@ -1,6 +1,6 @@
 ---
-title: Java基础知识点总结归纳
-excerpt: Java基础知识点总结归纳
+title: Java基础知识
+excerpt: Java基础知识
 date: 2022-04-24 23:55:39
 update: 2022-04-24 23:55:39
 categories: 
@@ -12,7 +12,7 @@ tags:
   - 基础
 ---
 
-# Java基础知识点总结归纳
+# Java基础知识
 
 ## 一、Java概述
 

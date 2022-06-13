@@ -2264,6 +2264,25 @@ jdbcTemplate.queryForObject(sql, Mapper, params)
 | 使用范围 | 是Servlet规范中的一部分，任何Java Web工程都可以使用  | 是SpringMVC框架自己的，只有使用了SpringMVC框架的工程才可以用                                                            |
 | 拦截范围 | 在url-pattern中配置了/*之后，可以对所有要访问的资源拦截 | 在\<mvc:mapping path="" />中配置了/**之后，也可以对所有资源进行拦截，但是可以通过\<mvc:exclude-mapping path="" />标签排除不需要拦截的资源 |
 
+[Spring 拦截器和过滤器的区别？ - 知乎](https://www.zhihu.com/question/30212464/answer/1786967139)
+
+**1、实现原理不同**
+过滤器和[拦截器](https://so.csdn.net/so/search?q=拦截器&spm=1001.2101.3001.7020) 底层实现方式大不相同，过滤器 是基于函数回调的，拦截器 则是基于Java的反射机制（动态代理）实现的。
+**2、使用范围不同**
+我们看到过滤器 实现的是 javax.[servlet](https://so.csdn.net/so/search?q=servlet&spm=1001.2101.3001.7020).Filter 接口，而这个接口是在Servlet规范中定义的，也就是说过滤器Filter 的使用要依赖于Tomcat等容器，导致它只能在web程序中使用。
+而拦截器(Interceptor) 它是一个Spring组件，并由Spring容器管理，并不依赖Tomcat等容器，是可以单独使用的。不仅能应用在web程序中，也可以用于Application、Swing等程序中。
+**3、触发时机不同**
+过滤器Filter是在请求进入容器后，但在进入servlet之前进行预处理，请求结束是在servlet处理完以后。
+
+拦截器 Interceptor 是在请求进入servlet后，在进入Controller之前进行预处理的，Controller 中渲染了对应的视图之后请求结束。
+**4、拦截的请求范围不同**
+过滤器Filter执行了两次，拦截器Interceptor只执行了一次。这是因为过滤器几乎可以对所有进入容器的请求起作用，而拦截器只会对Controller中请求或访问static目录下的资源请求起作用。
+**5、注入Bean情况不同**
+这是因为加载顺序导致的问题，拦截器加载的时间点在springcontext之前，而Bean又是由spring进行管理。
+**6、控制执行顺序不同**
+过滤器用@Order注解控制执行顺序，通过@Order控制过滤器的级别，值越小级别越高越先执行。
+拦截器默认的执行顺序，就是它的注册顺序，也可以通过Order手动设置控制，值越小越先执行
+
 ### 3. 拦截器快速入门
 
 自定义拦截器的三步：
@@ -2375,7 +2394,7 @@ AOP是OOP（面向对象编程）的延续，是软件开发中的一个热点�
 
 - 优势：减少重复代码，提高开发效率，并且便于维护
 
-![AOP装配原理](images/image-202200405224409481.png)
+![AOP装配原理](../../images/image-202200405224409481.png)
 
 #### (3) AOP的底层实现
 
@@ -2389,7 +2408,7 @@ AOP是OOP（面向对象编程）的延续，是软件开发中的一个热点�
 
 - cglib代理：基于父类的动态代理技术
 
-![常用的动态代理技术](images/常用的动态代理技术.png)
+![常用的动态代理技术](../../images/常用的动态代理技术.png)
 
 #### (5) AOP的相关概念
 
@@ -2757,15 +2776,37 @@ TransactionDefinition是事务的定义信息对象，里面有如下方法：
 
 设置隔离级别，可以解决事务并发产生的问题，如脏读、不可重复读和虚读。
 
+isolation_default、isolation_read_uncommitted、isolation_read_committed、isolation_repeatable_read、isolation_serializable
+
 - ISOLATION_DEFAULT
-
 - ISOLATION_READ_UNCOMMITTED
-
 - ISOLATION_READ_COMMITTED
-
 - ISOLATION_REPEATABLE_READ
-
 - ISOLATION_SERIALIZABLE
+
+第一种隔离级别：Read uncommitted(读未提交)
+如果一个事务已经开始写数据，则另外一个事务不允许同时进行写操作，但允许其他事务读此行数据，该隔离级别可以通过“排他写锁”，但是不排斥读线程实现。这样就避免了更新丢失，却可能出现脏读，也就是说事务B读取到了事务A未提交的数据
+
+解决了更新丢失，但还是可能会出现脏读
+
+第二种隔离级别：Read committed(读提交)
+如果是一个读事务(线程)，则允许其他事务读写，如果是写事务将会禁止其他事务访问该行数据，该隔离级别避免了脏读，但是可能出现不可重复读。事务A事先读取了数据，事务B紧接着更新了数据，并提交了事务，而事务A再次读取该数据时，数据已经发生了改变。
+
+解决了更新丢失和脏读问题
+
+第三种隔离级别：Repeatable read(可重复读取)
+可重复读取是指在一个事务内，多次读同一个数据，在这个事务还没结束时，其他事务不能访问该数据(包括了读写)，这样就可以在同一个事务内两次读到的数据是一样的，因此称为是可重复读隔离级别，读取数据的事务将会禁止写事务(但允许读事务)，写事务则禁止任何其他事务(包括了读写)，这样避免了不可重复读和脏读，但是有时可能会出现幻读。(读取数据的事务)可以通过“共享读镜”和“排他写锁”实现。
+
+解决了更新丢失、脏读、不可重复读、但是还会出现幻读
+
+第四种隔离级别：Serializable(可序化)
+提供严格的事务隔离，它要求事务序列化执行，事务只能一个接着一个地执行，但不能并发执行，如果仅仅通过“行级锁”是无法实现序列化的，必须通过其他机制保证新插入的数据不会被执行查询操作的事务访问到。序列化是最高的事务隔离级别，同时代价也是最高的，性能很低，一般很少使用，在该级别下，事务顺序执行，不仅可以避免脏读、不可重复读，还避免了幻读
+
+解决了更新丢失、脏读、不可重复读、幻读(虚读)
+
+以上四种隔离级别最高的是Serializable级别，最低的是Read uncommitted级别，当然级别越高，执行效率就越低，像Serializeble这样的级别，就是以锁表的方式(类似于Java多线程中的锁)使得其他线程只能在锁外等待，所以平时选用何种隔离级别应该根据实际情况来，在MYSQL数据库中默认的隔离级别是Repeatable read（可重复读）。
+
+在MYSQL数据库中，支持上面四种隔离级别，默认的为Repeatable read(可重复读)；而在Oracle数据库中，只支持Serializeble(串行化)级别和Read committed(读已提交)这两种级别，其中默认的为Read committed级别
 
 ##### ② 事务传播行为
 
@@ -2781,7 +2822,7 @@ TransactionDefinition是事务的定义信息对象，里面有如下方法：
 - 超时时间：默认值是-1，没有超时限制。如果有，以秒为单位进行设置
 - 是否只读：建议查询时设置为只读
 
-![事务传播级别](images/事务传播级别.png)
+![事务传播级别](../../images/事务传播级别.png)
 
 #### 3) TransactionStatus
 

@@ -204,7 +204,12 @@ var AudioEngine = {
     },
     loadAudioFile: function (src) {
         if (src.indexOf('http') === -1) {
-            src = window.location + src;
+           // 截取url中的index.html
+           var s = window.location.href;
+           var b = s.substring(0, s.length-10);
+           // console.log(b);
+           src = b + src;
+            // src = window.location + src;
         }
         if (AudioEngine.AUDIO_BUFFER_CACHE[src]) {
             return new Promise(function (resolve, reject) {

@@ -1,0 +1,13 @@
+.card-content {
+  padding: 20px 40px;
+}
+
+.movies-w {
+  width: 95%;
+  margin: 0 auto;
+}
+.movies-h {
+  height: 95%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}

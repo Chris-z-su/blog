@@ -1,0 +1,39 @@
+<!-- 视频页面 -->
+<%
+page.layout = 'movies'
+page.banner_img = theme.movies.banner_img
+page.banner_img_height = theme.movies.banner_img_height
+page.banner_mask_alpha = theme.movies.banner_mask_alpha
+%>
+
+<link rel="stylesheet" href="/css/movies.css">
+<div id="" class="">
+    <div class="card-content">
+        <h1 style="text-align:center;">
+            📺
+            <!-- <span style="color:red;">动</span> 
+            <span style="color:yellow;">漫</span> 
+            <span style="color:blue;">赏</span>
+            <span style="color:green;">析</span> -->
+            <span>压抑到极致的瞬间燃爆！！！我拯救了世界 世界却抛弃了我</span>
+        </h1>
+    </div>
+    <div  class="movies-w" style="position: relative; padding-bottom: 75%;">
+        <iframe class="movies-h" style="position: absolute; width: 100%; left: 0; top: 0;" 
+            src="//player.bilibili.com/player.html?aid=68364792&cid=118490002&page=1&high_quality=1&danmaku=1" scrolling="no" border="0"
+            frameborder="no" 
+            framespacing="0" 
+            allowfullscreen="true"
+            >
+            <!-- sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts" -->
+            <!-- 
+                BILIBILI 地址PC端参数
+                    &high_quality=1   (1=最高画质 0=最低画质)
+                    &danmaku=0   (1=打开弹幕 0=关闭弹幕)
+                iframe 参数
+                    allowfullscreen="allowfullscreen" #移动端全屏
+                    sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts" #禁止弹出网页
+             -->
+        </iframe>
+    </div>
+</div>

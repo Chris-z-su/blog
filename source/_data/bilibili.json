@@ -1,0 +1,380 @@
+{
+	"code": 0,
+	"message": "0",
+	"ttl": 1,
+	"data": {
+		"bvid": "BV19J411376H",
+		"aid": 68364792,
+		"videos": 1,
+		"tid": 24,
+		"tname": "MAD·AMV",
+		"copyright": 1,
+		"pic": "http://i1.hdslb.com/bfs/archive/416e551a719bab514780a747efde0f89ea8e4208.jpg",
+		"title": "压抑到极致的瞬间燃爆！！！我拯救了世界 世界却抛弃了我",
+		"pubdate": 1568965854,
+		"ctime": 1568965854,
+		"desc": "BGM：Tommee Profitt Jung Youth Fleurie - In the End\n素材：评论区 热评可见\n封面：评论区 热评可见\n看到这里的小伙伴 希望大家可以点赞收藏一下 有条件的可以丢俩硬币\n点赞收藏对我现阶段来说很重要 几天后丢出来也没关系",
+		"desc_v2": [{
+			"raw_text": "BGM：Tommee Profitt Jung Youth Fleurie - In the End\n素材：评论区 热评可见\n封面：评论区 热评可见\n看到这里的小伙伴 希望大家可以点赞收藏一下 有条件的可以丢俩硬币\n点赞收藏对我现阶段来说很重要 几天后丢出来也没关系",
+			"type": 1,
+			"biz_id": 0
+		}],
+		"state": 0,
+		"duration": 167,
+		"rights": {
+			"bp": 0,
+			"elec": 0,
+			"download": 1,
+			"movie": 0,
+			"pay": 0,
+			"hd5": 0,
+			"no_reprint": 1,
+			"autoplay": 1,
+			"ugc_pay": 0,
+			"is_cooperation": 0,
+			"ugc_pay_preview": 0,
+			"no_background": 0,
+			"clean_mode": 0,
+			"is_stein_gate": 0,
+			"is_360": 0,
+			"no_share": 0
+		},
+		"owner": {
+			"mid": 8055928,
+			"name": "在下蕾姆有何贵干",
+			"face": "http://i1.hdslb.com/bfs/face/dfdf5aec1fc9f4ecf41d3ae58608519f0e11ad84.jpg"
+		},
+		"stat": {
+			"aid": 68364792,
+			"view": 29931262,
+			"danmaku": 92154,
+			"reply": 11726,
+			"favorite": 1341115,
+			"coin": 1310084,
+			"share": 172085,
+			"now_rank": 0,
+			"his_rank": 3,
+			"like": 1692228,
+			"dislike": 0,
+			"evaluation": "",
+			"argue_msg": ""
+		},
+		"dynamic": "#AMV##MAD##综漫#",
+		"cid": 118490002,
+		"dimension": {
+			"width": 1920,
+			"height": 1080,
+			"rotate": 0
+		},
+		"season_id": 285597,
+		"premiere": null,
+		"teenage_mode": 0,
+		"no_cache": false,
+		"pages": [{
+			"cid": 118490002,
+			"page": 1,
+			"from": "vupload",
+			"part": "我拯救了世界 世界却抛弃了我",
+			"duration": 167,
+			"vid": "",
+			"weblink": "",
+			"dimension": {
+				"width": 1920,
+				"height": 1080,
+				"rotate": 0
+			}
+		}],
+		"subtitle": {
+			"allow_submit": false,
+			"list": []
+		},
+		"ugc_season": {
+			"id": 285597,
+			"title": "剧情向",
+			"cover": "https://archive.biliimg.com/bfs/archive/1c38f4ead62e7105c4e66e842a3821211cb508c2.jpg",
+			"mid": 8055928,
+			"intro": "有生之年系列",
+			"sign_state": 0,
+			"attribute": 12,
+			"sections": [{
+				"season_id": 285597,
+				"id": 329068,
+				"title": "正片",
+				"type": 1,
+				"episodes": [{
+					"season_id": 285597,
+					"section_id": 329068,
+					"id": 3402275,
+					"aid": 297448552,
+					"cid": 559079730,
+					"title": "100部动漫联手拯救世界！！！辞去已无年少日，羁绊永结少年心！",
+					"attribute": 0,
+					"arc": {
+						"aid": 297448552,
+						"videos": 0,
+						"type_id": 0,
+						"type_name": "",
+						"copyright": 0,
+						"pic": "http://i1.hdslb.com/bfs/archive/fa2d459536caff9dd8ca68a92a4bd7dc87fd022e.jpg",
+						"title": "100部动漫联手拯救世界！！！辞去已无年少日，羁绊永结少年心！",
+						"pubdate": 1648182664,
+						"ctime": 1648182664,
+						"desc": "",
+						"state": 0,
+						"duration": 851,
+						"rights": {
+							"bp": 0,
+							"elec": 0,
+							"download": 0,
+							"movie": 0,
+							"pay": 0,
+							"hd5": 0,
+							"no_reprint": 0,
+							"autoplay": 0,
+							"ugc_pay": 0,
+							"is_cooperation": 0,
+							"ugc_pay_preview": 0,
+							"arc_pay": 0,
+							"free_watch": 0
+						},
+						"author": {
+							"mid": 0,
+							"name": "",
+							"face": ""
+						},
+						"stat": {
+							"aid": 297448552,
+							"view": 477276,
+							"danmaku": 4225,
+							"reply": 1068,
+							"fav": 26839,
+							"coin": 33291,
+							"share": 2502,
+							"now_rank": 0,
+							"his_rank": 0,
+							"like": 44675,
+							"dislike": 0,
+							"evaluation": "",
+							"argue_msg": ""
+						},
+						"dynamic": "",
+						"dimension": {
+							"width": 0,
+							"height": 0,
+							"rotate": 0
+						},
+						"desc_v2": null,
+						"is_chargeable_season": false
+					},
+					"page": {
+						"cid": 559079730,
+						"page": 1,
+						"from": "vupload",
+						"part": "此生无悔入二次元！！！",
+						"duration": 851,
+						"vid": "",
+						"weblink": "",
+						"dimension": {
+							"width": 1920,
+							"height": 1080,
+							"rotate": 0
+						}
+					},
+					"bvid": "BV1bF411x7M3"
+				}, {
+					"season_id": 285597,
+					"section_id": 329068,
+					"id": 3402277,
+					"aid": 68364792,
+					"cid": 118490002,
+					"title": "压抑到极致的瞬间燃爆！！！我拯救了世界 世界却抛弃了我",
+					"attribute": 0,
+					"arc": {
+						"aid": 68364792,
+						"videos": 0,
+						"type_id": 0,
+						"type_name": "",
+						"copyright": 0,
+						"pic": "http://i1.hdslb.com/bfs/archive/416e551a719bab514780a747efde0f89ea8e4208.jpg",
+						"title": "压抑到极致的瞬间燃爆！！！我拯救了世界 世界却抛弃了我",
+						"pubdate": 1568965854,
+						"ctime": 1568965854,
+						"desc": "",
+						"state": 0,
+						"duration": 167,
+						"rights": {
+							"bp": 0,
+							"elec": 0,
+							"download": 0,
+							"movie": 0,
+							"pay": 0,
+							"hd5": 0,
+							"no_reprint": 0,
+							"autoplay": 0,
+							"ugc_pay": 0,
+							"is_cooperation": 0,
+							"ugc_pay_preview": 0,
+							"arc_pay": 0,
+							"free_watch": 0
+						},
+						"author": {
+							"mid": 0,
+							"name": "",
+							"face": ""
+						},
+						"stat": {
+							"aid": 68364792,
+							"view": 29931262,
+							"danmaku": 92154,
+							"reply": 11726,
+							"fav": 1341115,
+							"coin": 1310084,
+							"share": 172085,
+							"now_rank": 0,
+							"his_rank": 3,
+							"like": 1692228,
+							"dislike": 0,
+							"evaluation": "",
+							"argue_msg": ""
+						},
+						"dynamic": "",
+						"dimension": {
+							"width": 0,
+							"height": 0,
+							"rotate": 0
+						},
+						"desc_v2": null,
+						"is_chargeable_season": false
+					},
+					"page": {
+						"cid": 118490002,
+						"page": 1,
+						"from": "vupload",
+						"part": "我拯救了世界 世界却抛弃了我",
+						"duration": 167,
+						"vid": "",
+						"weblink": "",
+						"dimension": {
+							"width": 1920,
+							"height": 1080,
+							"rotate": 0
+						}
+					},
+					"bvid": "BV19J411376H"
+				}, {
+					"season_id": 285597,
+					"section_id": 329068,
+					"id": 3402276,
+					"aid": 80849923,
+					"cid": 145445618,
+					"title": "100部动漫角色联手拯救世界！！！",
+					"attribute": 0,
+					"arc": {
+						"aid": 80849923,
+						"videos": 0,
+						"type_id": 0,
+						"type_name": "",
+						"copyright": 0,
+						"pic": "http://i0.hdslb.com/bfs/archive/d43d53766e5cb4e9a2c1057b82ecb7c0df54bdf2.jpg",
+						"title": "100部动漫角色联手拯救世界！！！",
+						"pubdate": 1577436720,
+						"ctime": 1577436720,
+						"desc": "",
+						"state": 0,
+						"duration": 851,
+						"rights": {
+							"bp": 0,
+							"elec": 0,
+							"download": 0,
+							"movie": 0,
+							"pay": 0,
+							"hd5": 0,
+							"no_reprint": 0,
+							"autoplay": 0,
+							"ugc_pay": 0,
+							"is_cooperation": 0,
+							"ugc_pay_preview": 0,
+							"arc_pay": 0,
+							"free_watch": 0
+						},
+						"author": {
+							"mid": 0,
+							"name": "",
+							"face": ""
+						},
+						"stat": {
+							"aid": 80849923,
+							"view": 12315528,
+							"danmaku": 151368,
+							"reply": 12067,
+							"fav": 752120,
+							"coin": 1004467,
+							"share": 91268,
+							"now_rank": 0,
+							"his_rank": 7,
+							"like": 964553,
+							"dislike": 0,
+							"evaluation": "",
+							"argue_msg": ""
+						},
+						"dynamic": "",
+						"dimension": {
+							"width": 0,
+							"height": 0,
+							"rotate": 0
+						},
+						"desc_v2": null,
+						"is_chargeable_season": false
+					},
+					"page": {
+						"cid": 145445618,
+						"page": 1,
+						"from": "vupload",
+						"part": "此生无悔入二次元！！！",
+						"duration": 851,
+						"vid": "",
+						"weblink": "",
+						"dimension": {
+							"width": 1920,
+							"height": 1080,
+							"rotate": 0
+						}
+					},
+					"bvid": "BV1XJ411Y7oK"
+				}]
+			}],
+			"stat": {
+				"season_id": 285597,
+				"view": 42724044,
+				"danmaku": 247747,
+				"reply": 24861,
+				"fav": 2120074,
+				"coin": 2347842,
+				"share": 265855,
+				"now_rank": 0,
+				"his_rank": 0,
+				"like": 2701456
+			},
+			"ep_count": 3,
+			"season_type": 1,
+			"is_pay_season": false
+		},
+		"is_season_display": true,
+		"user_garb": {
+			"url_image_ani_cut": ""
+		},
+		"honor_reply": {
+			"honor": [{
+				"aid": 68364792,
+				"type": 2,
+				"desc": "第27期每周必看",
+				"weekly_recommend_num": 27
+			}, {
+				"aid": 68364792,
+				"type": 3,
+				"desc": "全站排行榜最高第3名",
+				"weekly_recommend_num": 0
+			}]
+		}
+	}
+}
