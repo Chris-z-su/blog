@@ -1,6 +1,6 @@
 ---
-title: Java基础知识
-excerpt: Java基础知识
+title: Java面试基础
+excerpt: Java面试基础
 date: 2022-04-24 23:55:39
 update: 2022-04-24 23:55:39
 categories: 
@@ -12,7 +12,7 @@ tags:
   - 基础
 ---
 
-# Java基础知识
+# Java面试基础
 
 ## 一、Java概述
 

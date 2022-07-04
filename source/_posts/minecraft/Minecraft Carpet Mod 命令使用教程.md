@@ -646,6 +646,28 @@ worldy根据[【MC|熟肉】Carpet Mod（1.14/1.15）详尽教程【gnembon】](
 
 
 
+1.17版本的gamerule中新增了一个选项：playersSleepingPercentage。 默认值为100。 用于设置跳过夜晚所需的入睡玩家所占百分比。 设置为0时,1个玩家入睡即可跳过夜晚
+
+carpet playersSleepingPercentage 0
+
+```
+/carpet playersSleepingPercentage 0
+Unknown rule: playersSleepingPercentage
+
+
+https://github.com/gnembon/fabric-carpet/issues/1107
+/gamerule playersSleepingPercentage 0 is the equivalent to it in vanilla 1.17.
+
+
+
+```
+
+
+
+
+
+
+
 # 自定义登陆界面服务器欢迎语
 
 > 能够在服务器运行时改变登陆界面服务器欢迎语,不需要关闭服务器修改配置文件
