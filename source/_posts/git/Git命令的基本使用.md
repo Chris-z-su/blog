@@ -244,6 +244,44 @@ git revert <commit_id> # 撤销指定的版本，撤销也会作为一次提交�
 来源：简书
 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
 
+
+
+## 七、git回滚操作工作流
+
+1.  回滚至之前的版本
+
+```shell
+$ git log
+$ git reset --hard b23f8e17aaa24f6ae95b6c333f06d9261df2525e
+```
+
+2. 回滚至之后的版本
+
+```shell
+$ git reflog  # 显示之前操作
+b23f8e1 (HEAD -> master) HEAD@{0}: reset: moving to b23f8e17aaa24f6ae95b6c333f06d9261df2525e
+ef26ac6 HEAD@{1}: reset: moving to ef26ac6324424dbb549bc6a30866312b96679558
+4e2bb67 HEAD@{2}: commit: add 约吗模块
+b23f8e1 (HEAD -> master) HEAD@{3}: commit: add 短视频模块
+ef26ac6 HEAD@{4}: commit: v2
+7111058 HEAD@{5}: commit (initial): v1
+
+# 回到某个版本
+$ git reset --hard 4e2bb67
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## 九十九、错误解决：
 
 ### 1、执行git命令时出现fatal: 'origin' does not appear to be a git repository错误
