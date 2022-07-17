@@ -49,6 +49,26 @@ tags:
 /player Steve spawn at -292 187 -361
 刷铁塔：
 /player Alex spawn at 374.70 63.00 -416.20
+
+#################################################
+空置域挂机平台：
+中间：
+/player Alex spawn at 906 94 -361
+
+空置域中间：
+/player kzy01 spawn at 829 100 -377
+
+左边：
+/player kzy02 spawn at 887 95 -439
+
+右边：
+/player Steve spawn at 872 99 -300
+
+/player kzy03 spawn at 770 97 -303
+/player kzy04 spawn at 770 95 -439
+/player kzy05 spawn at 766 95 -377
+#################################################
+
 ```
 
 
@@ -92,7 +112,16 @@ tags:
 /player Steve kill
 ```
 
-### 9) 说明
+### 7) 让假人扔出东西
+
+```shell
+# 扔出手上的东西
+/player kzy02 drop
+```
+
+
+
+### 99) 说明
 
 ```shell
 控制玩家

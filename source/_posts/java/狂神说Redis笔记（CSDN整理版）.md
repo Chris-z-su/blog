@@ -392,6 +392,8 @@ OK
 
  Redis是一个开源（BSD许可），内存存储的数据结构服务器，可用作**数据库**，**高速缓存**和**消息队列代理**。它支持[字符串](https://www.redis.net.cn/tutorial/3508.html)、[哈希表](https://www.redis.net.cn/tutorial/3509.html)、[列表](https://www.redis.net.cn/tutorial/3510.html)、[集合](https://www.redis.net.cn/tutorial/3511.html)、[有序集合](https://www.redis.net.cn/tutorial/3512.html)，[位图](https://www.redis.net.cn/tutorial/3508.html)，[hyperloglogs](https://www.redis.net.cn/tutorial/3513.html)等数据类型。内置复制、[Lua脚本](https://www.redis.net.cn/tutorial/3516.html)、LRU收回、[事务](https://www.redis.net.cn/tutorial/3515.html)以及不同级别磁盘持久化功能，同时通过Redis Sentinel提供高可用，通过Redis Cluster提供自动[分区](https://www.redis.net.cn/tutorial/3524.html)。
 
+> 官方文档：https://www.redis.net.cn/order/
+
 ### Redis-key
 
 > 在redis中无论什么数据类型，在数据库中都是以key-value形式保存，通过进行对Redis-key的操作，来完成对数据库中数据的操作。
@@ -1063,6 +1065,12 @@ OK
 ### Geospatial(地理位置)
 
 > 使用经纬度定位地理坐标并用一个**有序集合zset保存**，所以zset命令也可以使用
+>
+> 官方文档：https://www.redis.net.cn/order/3685.html
+>
+> 经纬度查询：https://jingweidu.bmcx.com/
+>
+> 经度：111.06602742181892，纬度：38.43624789860152
 
 | 命令                                                         | 描述                                                         |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |

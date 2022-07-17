@@ -565,7 +565,7 @@ public class UserDaoImpl implements UserDao {
 
 applicationContext：接口类型，代表应用上下文，可以通过其实例获得Spring容器中的Bean对象
 
-![](images/20151204130539849.png)
+![](../../images/20151204130539849.png)
 
 ![](images/20151204171304513.png)
 
